@@ -20,6 +20,15 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+group :development do
+  gem 'guard'
+end
+
+group :test do 
+  gem "factory_girl_rails" 
+  gem "capybara" # needed for our integration tests, which we'll talk about more later
+end
+
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
